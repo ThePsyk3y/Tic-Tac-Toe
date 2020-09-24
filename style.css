@@ -4,11 +4,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 :root {
   --cell-size: 100px;
   --mark-size: calc(var(--cell-size) * 0.9);
+}
+
+header {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  box-shadow: 0 0 10px 0 lightgray;
+}
+
+.title {
+  font-family: Lato;
+  color: white;
+  font-size: 1.5rem;
+}
+.title small {
+  font-size: 0.6rem;
+}
+
+.myLink {
+  font-family: Lato;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 5px;
+  color: white;
+}
+
+.myLink a {
+  text-decoration: none;
+  color: white;
 }
 
 .board {
@@ -124,16 +158,16 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: monospace;
+  font-family: Lato;
   font-size: 5rem;
   flex-direction: column;
 }
 
 .winning-message button {
-  font-size: 3rem;
+  font-size: 2rem;
   background-color: white;
   border: 1px solid black;
-  border-radius:15px;
+  border-radius: 15px;
   outline: none;
   padding: 0.25em 0.5em;
   margin-top: 15px;
